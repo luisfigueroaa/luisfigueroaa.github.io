@@ -1,7 +1,6 @@
 ---
 title: "Convertir de una imágen convencional (ej. JPG) a un trazo o dibujo (ej. SVG, PNG?) con Inkscape"
 date: 2022-06-11T12:47:17-05:00
-draft: true
 tags: ["Inkscape",]
 categories: ["Tutoriales",]
 ---
