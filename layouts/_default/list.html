@@ -23,8 +23,8 @@
 
     <ul>
 	{{ range first 5 .Site.RegularPages }}
-	<li style="color:gray">
-	    <a href="{{.Permalink}}"> {{.Title}}</a> | {{ dateFormat "2 Jan 2006" .Date }}
+	<li>
+	    <a href="{{.Permalink}}"> {{.Title}}</a> | <span style="color:gray">{{ dateFormat "2 Jan 2006" .Date }}</span>
 	</li>
 	{{ end }}
     </ul>
