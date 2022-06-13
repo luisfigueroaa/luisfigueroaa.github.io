@@ -54,10 +54,10 @@ a {
 }
 
 @media (max-width: 500px) {
-    #welcome figure {
+    .home figure {
 	flex-direction: column ;
     }
-    #welcome img {
+    .home figure img {
 	margin: 0 auto 1em auto ;
     }
 }
