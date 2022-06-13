@@ -9,6 +9,7 @@
     --red:	    #ff5555 ;
     --yellow:	    #f1fa8c ;
     --current_line: #44475a ;
+    --black:	    #21222C ;
 }
 
 body { 
@@ -114,8 +115,24 @@ footer a {
     color: gray;
 }
 
+img {
+    max-width: 100% ;
+}
+
 p img, li img, h1 img, h2 img, h3 img, h4 img, dt img, td img, button img {
     vertical-align: middle ;
+}
+
+pre {
+    white-space: pre-wrap ;
+    border: 1px solid var(--green) ;
+    padding: 1em ;
+    background: var(--black) ;
+}
+
+code {
+    color: var(--green) ;
+    font-size: 120% ;
 }
 
 #cat_tutoriales:before { content:"🔨" ; }

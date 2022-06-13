@@ -9,6 +9,11 @@ Primero debemos tener instalado inkscape lo podemos descargar del siguiente enla
 
 Descargar [Inkscape](https://inkscape.org/release/inkscape-1.2/).
 
+O si tienes Debian o Ubuntu, lo puedes instalar desde sus repositorios:
+
+    sudo apt update && sudo apt upgrade
+    sudo apt install inkscape
+
 Ahora debemos ingresar la imágen que se quiera convertir a trazo, por ejemplo la siguiente:
 
 Vamos a la Barra de herramientas y presionamos en Vectorizar mapa de bits. Se abrirá un menú a la derecha a continuación. Le damos click en Actualizar, para poder tener una preview de nuestra imágen a vectorizar. Por ultimo le damos en Aplicar.
