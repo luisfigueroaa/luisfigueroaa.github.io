@@ -1,0 +1,54 @@
+{{ partial "header.html" . }}
+
+<h1 id="home-title" class="title">{{.Title}}</h1>
+
+{{ partial "home/welcome.html" . }}
+
+
+<article class="home">
+
+    <h1>Links y redes sociales</h1>
+
+    <ul class="floating-menu">
+	<li><a href="https://www.youtube.com/channel/UC0pkwoEayu8xR09YBjfCVWQ"><img src="pix/youtube-ico.png" alt=""> Youtube</a></li>
+	<li><a href="https://github.com/luisfigueroaa"><img src="pix/github-ico.png" alt=""> Github</a></li>
+	<li><a href="https://github.com/luisfigueroaa/.dotfiles"><img src="pix/gnu-logo.png" alt=""> Dotfiles</a></li>
+    </ul>
+
+</article>
+
+<article class="home">
+
+    <h1>Publicaciones recientes</h1>
+
+    <ul>
+	{{ range first 5 .Site.RegularPages }}
+	<li style="color:gray">
+	    <a href="{{.Permalink}}"> {{.Title}}</a> | {{ dateFormat "2 Jan 2006" .Date }}
+	</li>
+	{{ end }}
+    </ul>
+
+    <h2>Por categor&iacute;a</h2>
+
+    <ul class="floating-menu">
+	{{ range .Site.Taxonomies.categories }}
+	<li>
+	    <a href="{{ .Page.Permalink }}" id="cat_{{ lower .Page.Title | replaceRE " " "_" }}">{{ .Page.Title }}</a>
+	</li>
+	{{ end }}
+    </ul>
+
+    <h2>Por tag</h2>
+
+    <ul class="floating-menu">
+	{{ range .Site.Taxonomies.tags }}
+	<li>
+	    <a href="{{ .Page.Permalink }}" id="tag_{{ lower .Page.Title | replaceRE " " "_" }}">{{ .Page.Title }}</a>
+	</li>
+	{{ end }}
+    </ul>
+
+</article>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,43 @@
+        {{ if isset .Params "tags" }}
+            {{ $tagsLen := len .Params.tags }}
+            {{ if gt $tagsLen 0 }}
+        <ul class="floating-menu" style="margin-top: 1em"> 
+            Tags:</br>
+	    {{ range $k, $v := .Params.tags }}
+                {{ $url := printf "tags/%s" (. | urlize | lower) }}
+		<li><a id="tag_{{ . }}" href="{{ $url | absURL }}">{{ . | title }}</a></li>
+                {{ if lt $k (sub $tagsLen 1) }} | {{ end }}
+	    {{ end }}
+	</ul>
+            {{ end }}
+        {{ end }}
+
+        {{ if isset .Params "categories" }}
+            {{ $categoriesLen := len .Params.categories }}
+            {{ if gt $categoriesLen 0 }}
+        <ul class="floating-menu" style="margin-top: 1em"> 
+            Categor&iacute;as:</br>
+	    {{ range $k, $v := .Params.categories }}
+                {{ $url := printf "categories/%s" (. | urlize | lower) }}
+		<li><a id="categoria_{{ . }}" href="{{ $url | absURL }}">{{ . | title }}</a>
+                {{ if lt $k (sub $categoriesLen 1) }} | {{ end }}
+	    {{ end }}
+	</ul>
+            {{ end }}
+        {{ end }}
+    </article>
+
+    </main>
+
+    <footer>
+	<div>
+	    <br>⬆️ <a href="#title">[Arriba]</a></br> 
+	    {{ if not .IsHome }}
+	    🏠 <a href="{{ .Site.BaseURL }}">[P&aacute;gina principal]</a>
+	    {{ end }}
+	</div>
+	<br><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></br>
+        <a href="/index.xml"><img src="/pix/rss.svg" style="max-height:1em;vertical-align:middle" alt="RSS"> Subscr&iacute;bete</a>
+    </footer>
+</body>
+</html>
