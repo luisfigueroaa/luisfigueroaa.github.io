@@ -1,0 +1,2 @@
+#!/bin/sh
+rsync -vrP --delete-after public/ root@luisfigueroa.xyz:/var/www/luisfigueroa/

@@ -31,8 +31,11 @@
 
     <footer>
 	<div>
-	    {{ if .IsHome }}
+	    {{ if (eq .Kind "home") }}
 	    <br>⬆️ <a href="#home-title">[Arriba]</a></br> 
+	    {{ else if (eq .Kind "term") }}
+	    <br>⬆️ <a href="#{{ .Data.Singular | replaceRE "(.{3}).*" "$1" }}_{{ lower .Page.Title | replaceRE " " "_" }}">[Arriba]</a></br> 
+	    🏠 <a href="{{ .Site.BaseURL }}">[P&aacute;gina principal]</a>
 	    {{ else }}
 	    <br>⬆️ <a href="#title">[Arriba]</a></br> 
 	    🏠 <a href="{{ .Site.BaseURL }}">[P&aacute;gina principal]</a>

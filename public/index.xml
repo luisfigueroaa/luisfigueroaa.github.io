@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Luis Figueroa - Website &amp; Blog</title>
+    <link>https://luisfigueroa.xyz/</link>
+    <description>Recent content on Luis Figueroa - Website &amp; Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Jun 2022 23:30:02 -0500</lastBuildDate><atom:link href="https://luisfigueroa.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Habemus Website</title>
+      <link>https://luisfigueroa.xyz/articles/habemus-website/</link>
+      <pubDate>Thu, 16 Jun 2022 23:30:02 -0500</pubDate>
+      
+      <guid>https://luisfigueroa.xyz/articles/habemus-website/</guid>
+      <description>A partir de hace unos días pude crear mi Website, gracias a Land Chat (gracias a Luke Smith por su Tutorial pude desarollar este Website 100% Libre de Javascript. No es que tenga nada en contra de JS (¿O si?) pero después de desarollar en React puedo decir que manejar solo HTML y CSS hace que todo lo veas de una manera más minimalista y funcional. Como dicen, poco es más.</description>
+    </item>
+    
+    <item>
+      <title>Convertir de una imágen convencional (ej. JPG) a un trazo o dibujo (ej. SVG, PNG?) con Inkscape</title>
+      <link>https://luisfigueroa.xyz/tutoriales/inkscape/</link>
+      <pubDate>Sat, 11 Jun 2022 12:47:17 -0500</pubDate>
+      
+      <guid>https://luisfigueroa.xyz/tutoriales/inkscape/</guid>
+      <description>Primero debemos tener instalado inkscape lo podemos descargar del siguiente enlace:
+Descargar Inkscape.
+O si tienes Debian o Ubuntu, lo puedes instalar desde sus repositorios:
+sudo apt update &amp;amp;&amp;amp; sudo apt upgrade sudo apt install inkscape  Ahora debemos ingresar la imágen que se quiera convertir a trazo, por ejemplo la siguiente:
+Vamos a la Barra de herramientas y presionamos en Vectorizar mapa de bits. Se abrirá un menú a la derecha a continuación.</description>
+    </item>
+    
+  </channel>
+</rss>
