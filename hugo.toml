@@ -14,3 +14,7 @@ title = 'Luis Figueroa'
   name = "CV"
   url = "/cv/"
   weight = 2
+
+ [caches]
+  [caches.images]
+    dir = ':cacheDir/images' 
