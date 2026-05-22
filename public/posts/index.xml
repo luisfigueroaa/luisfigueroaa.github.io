@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Artículos on Luis Figueroa</title>
-    <link>http://localhost:1313/luisfigueroaa/luisfigueroaa.github.io/posts/</link>
-    <description>Recent content in Artículos on Luis Figueroa</description>
+    <title>Posts on Luis Figueroa</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Luis Figueroa</description>
     <generator>Hugo</generator>
     <language>es-pe</language>
     <lastBuildDate>Thu, 21 May 2026 23:14:20 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/luisfigueroaa/luisfigueroaa.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hola</title>
-      <link>http://localhost:1313/luisfigueroaa/luisfigueroaa.github.io/posts/hola/</link>
+      <link>http://localhost:1313/posts/hola/</link>
       <pubDate>Thu, 21 May 2026 23:14:20 -0500</pubDate>
-      <guid>http://localhost:1313/luisfigueroaa/luisfigueroaa.github.io/posts/hola/</guid>
+      <guid>http://localhost:1313/posts/hola/</guid>
       <description>&lt;p&gt;Aquí empezaré a subir todo lo relacionado con electrónica, videojuegos o mis proyectos.&lt;/p&gt;&#xA;&lt;p&gt;El sitio web es estático pero trabajado con Hugo.&lt;/p&gt;&#xA;&lt;p&gt;Índice&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#qu%C3%A9-es-hugo&#34;&gt;Qué es hugo?&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;qué-es-hugo&#34;&gt;Qué es Hugo?&lt;/h2&gt;&#xA;&lt;p&gt;Según su &lt;a href=&#34;https://gohugo.io/&#34;&gt;sitio web&lt;/a&gt; es:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Hugo es uno de los generadores de sitios estáticos de código abierto más populares. Gracias a su increíble velocidad y flexibilidad, Hugo hace que crear sitios web vuelva a ser divertido.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Practicamente es una herramienta que me generará un sitio web &amp;ldquo;estático&amp;rdquo; pero que da la impresión que es uno que tiene PHP o cosas complejas como PHP para generar las entradas del blog, como en este caso.&lt;/p&gt;</description>
     </item>
   </channel>

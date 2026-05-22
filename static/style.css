@@ -76,3 +76,25 @@ pre {
     overflow-x: auto;
     padding: 10px;
 }
+
+/********** Iconos **********/
+
+.icono::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-right: 6px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.icono-pdf::before {
+  background-image: url('images/icons/pdf.png');
+}
+
+.icono-latex::before {
+  background-image: url('images/icons/latex.png');
+}
