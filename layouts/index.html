@@ -1,0 +1,87 @@
+{{ define "main" }}
+    <p style="font-style: italic; color: green;">Bienvenido a mi sitio web. Soy
+    Ingeniero Electrónico especializado en Telecomunicaciones y programador.
+    También me interesan los sistemas embebidos, el desarrollo de software y los
+    videojuegos de estrategia y RPG.</p>
+
+    <p>Puedes ver mi trabajo a detalle en la <a href="pages/cv.html">página de
+    mi CV</a>. Aquí verás mi experiencia tanto como programador como
+    ingeniero electrónico.</p>
+
+    <p>Puedes encontrar mis <a href="#proyectos">proyectos</a> para ser
+    consultados y algunos de ellos tienen un demo para que sea visible.</p>
+
+    <div class="cajas">
+        <div>
+            <h3>Proyectos</h3>
+            <ul>
+                <li>
+                    {{ range (where .Site.RegularPages "Section" "proyectos") }}
+                    <a href="{{ .Permalink }}">{{ .Title }}</a> | 
+                    <time>{{ .Date.Format "2006" }}</time>
+                </li>
+                {{ else }}
+                <li><span style="font-style: italic;">En desarrollo</span></li>
+                {{ end }}
+            </ul>
+        </div>
+        <div>
+            <h3>Publicaciones recientes</h3>
+            <ul>
+                {{ range (first 5 (where .Site.RegularPages "Section" "posts")) }}
+                <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a> | 
+                    <time>{{ .Date.Format "2006-01-02" }}</time>
+                </li>
+                {{ else }}
+                <li><span style="font-style: italic;">En desarrollo</span></li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="cajas">
+        <div>
+            <h3>¿Porque este sitio web tiene un estilo particular?</h3>
+
+            <p>No es que no sepa hacer sitios web más complejos y que no este
+            familiarizado con tecnologías como Tailwind, Bootstrap, etc. Simplemente que
+            soy alguien que sigue la filosofía Suckless. Es decir, trato de usar las
+            herramientas actuales de la manera más pura y sencilla posible, es por esto
+            que este sitio web esta hermosamente escrito en un formato semi-HTML2.</p>
+
+            <p>Mis herramientas de trabajo actualmente son VIM como editor de
+            código (aunque por un caso práctico uso un pluge de VIM en
+            VSCODE)</p>
+
+            <img src="images/vim_on_fire.gif" alt="vim on fire">
+        </div>
+
+        <div>
+            {{ partial "suckless.html" . }}
+        </div>
+
+        <div>
+            <h3>¿Que juego?</h3>
+
+            <p>Soy aficionado a los juegos de estrategia (ARPG, RTS, MOBA).</p>
+
+            <ul>
+                <li><b>ARPG</b>
+                    : Diablo 2, Diablo 2 Resurrected.</li>
+                <li><b>RTS</b>
+                    : Starcraft Remastered.</li>
+                <li><b>MOBA</b>
+                    : Dota 2, LOL.</li>
+            </ul>
+
+            <p>Tengo un canal de <span style="color: rgb(99, 99,
+            255);">Discord</span>. Puedes unirte presionando en el siguiente
+            boton:</p>
+
+            <a href="https://discord.gg/jAmHpeb8cg"><img src="images/canal-discord.gif" alt="canal discord luxio"></a>
+
+        </div>
+    </div>
+{{ end }}

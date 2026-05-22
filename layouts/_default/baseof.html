@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>
+            <a href="{{ .Site.BaseURL }}">
+                {{ .Site.Title }}
+                <span>
+                    <i>{{ .Site.Params.description }}</i>
+                </span>
+            </a>
+        </h1>
+    </header>
+
+    <nav>
+        {{ range $index, $element := .Site.Menus.main }}
+            {{ if $index }} | {{ end }}
+            <a href="{{ $element.URL }}">{{ $element.Name }}</a>
+        {{ end }}
+    </nav>
+
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>{{ now.Format "2006" }}</p>
+    </footer>
+
+</body>
+</html>

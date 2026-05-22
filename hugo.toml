@@ -1,0 +1,16 @@
+baseURL = 'https://github.com/luisfigueroaa/luisfigueroaa.github.io'
+locale = 'es-pe'
+title = 'Luis Figueroa'
+
+[params]
+    description = "Mi Sitio Web"
+
+[[menus.main]]
+  name = "Inicio"
+  url = "/"
+  weight = 1
+
+[[menus.main]]
+  name = "CV"
+  url = "/cv/"
+  weight = 2

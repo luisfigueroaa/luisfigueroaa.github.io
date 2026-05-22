@@ -1,0 +1,78 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    border-bottom: 1px solid #000;
+    color: white;
+    background-color: #920000;
+}
+
+header a{
+    text-decoration: none; 
+    color: inherit;
+}
+
+header h1 {
+    width: 100%;
+}
+
+header h1 span {
+    font-weight: 100; 
+    font-size: small;
+}
+
+header, footer, main, nav {
+    padding: 0 10px;
+}
+
+nav {
+    border: 1px solid;
+    width: fit-content;
+    text-align: center;
+    margin: 10px 0 0 10px;
+    padding: 10px;
+}
+
+.cajas {
+    display: flex; 
+    gap: 10px;
+}
+
+.cajas div {
+    width: 50%;
+}
+
+@media (max-width: 480px) {
+    .cajas {
+        flex-direction: column;
+    }
+    .cajas div {
+        width: 100%;
+    }
+}
+
+time {
+    font-style: italic;
+    color: #888;
+}
+
+article img{
+    max-width: 50%; 
+}
+
+@media (max-width: 480px) {
+    article img{
+        max-width: 100%;
+    }
+}
+
+pre {
+    background: black;
+    color: greenyellow;
+    overflow-x: auto;
+    padding: 10px;
+}
