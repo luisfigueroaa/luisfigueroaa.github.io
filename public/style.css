@@ -37,6 +37,24 @@ nav {
     padding: 10px;
 }
 
+nav a.active {
+    font-weight: bold;
+}
+
+.redes-sociales {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.redes-sociales li {
+    border: solid 1px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 .cajas {
     display: flex; 
     gap: 10px;
@@ -58,6 +76,7 @@ nav {
 time {
     font-style: italic;
     color: #888;
+    font-family: monospace;
 }
 
 article img{
@@ -79,22 +98,27 @@ pre {
 
 /********** Iconos **********/
 
+.icono {
+  display: inline-flex;
+  align-items: center;
+}
+
 .icono::before {
   content: "";
   display: inline-block;
-  width: 13px;
-  height: 13px;
+  width: 1em;
+  height: 1em;
   margin-right: 6px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  vertical-align: middle;
 }
 
-.icono-pdf::before {
-  background-image: url('images/icons/pdf.png');
-}
+/* Redes sociales */
+.icono-github::before { background-image: url('images/icons/github.png'); }
+.icono-discord::before { background-image: url('images/icons/discord.png'); }
+.icono-youtube::before { background-image: url('images/icons/youtube.png'); }
 
-.icono-latex::before {
-  background-image: url('images/icons/latex.png');
-}
+/* CV */
+.icono-pdf::before { background-image: url('images/icons/pdf.png'); }
+.icono-latex::before { background-image: url('images/icons/latex.png'); }

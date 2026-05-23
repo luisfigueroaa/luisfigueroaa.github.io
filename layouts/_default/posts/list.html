@@ -6,7 +6,7 @@
     <ul>
         {{ range .Pages }}
         <li>
-            <time>{{ .Date.Format "2006-01-02" }}</time> | 
+            <time>{{ .Date.Format "02-01-2006" }}</time> | 
             <a href="{{ .Permalink }}">{{ .Title }}</a>
         </li>
         {{ end }}

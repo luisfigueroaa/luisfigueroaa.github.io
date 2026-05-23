@@ -20,10 +20,10 @@
     </header>
 
     <nav>
-        {{ range $index, $element := .Site.Menus.main }}
-            {{ if $index }} | {{ end }}
-            <a href="{{ $element.URL }}">{{ $element.Name }}</a>
-        {{ end }}
+        {{- range $index, $element := .Site.Menus.main -}}
+            {{- if $index }} | {{ end -}}
+            <a href="{{ $element.URL }}" class="{{ if eq $.RelPermalink $element.URL }}active{{ end }}">{{ $element.Name }}</a>
+        {{- end -}}
     </nav>
 
     <main>

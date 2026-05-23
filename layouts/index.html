@@ -1,4 +1,6 @@
 {{ define "main" }}
+
+    <h3>¡Bienvenido!</h3>
     <p style="font-style: italic; color: green;">Bienvenido a mi sitio web. Soy
     Ingeniero Electrónico especializado en Telecomunicaciones y programador.
     También me interesan los sistemas embebidos, el desarrollo de software y los
@@ -11,12 +13,19 @@
     <p>Puedes encontrar mis <a href="#proyectos">proyectos</a> para ser
     consultados y algunos de ellos tienen un demo para que sea visible.</p>
 
+    <h3>Redes sociales</h3>
+    <ul class="redes-sociales">
+        <li><a href="https://github.com/luisfigueroaa" class="icono icono-github">Github</a></li>
+        <li><a href="https://discord.gg/jAmHpeb8cg" class="icono icono-discord">Discord</a></li>
+        <li><a href="https://www.youtube.com/@bluedragonn1" class="icono icono-youtube">Youtube</a></li>
+    </ul>
+
     <div class="cajas">
         <div>
             <h3>Proyectos</h3>
             <ul>
+                {{ range (where .Site.RegularPages "Section" "proyectos") }}
                 <li>
-                    {{ range (where .Site.RegularPages "Section" "proyectos") }}
                     <a href="{{ .Permalink }}">{{ .Title }}</a> | 
                     <time>{{ .Date.Format "2006" }}</time>
                 </li>

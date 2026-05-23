@@ -20,7 +20,7 @@
       <link>http://localhost:1313/proyectos/lna/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/proyectos/lna/</guid>
-      <description>&lt;p&gt;Este proyecto consiste en el diseño de un amplificador de bajo ruido (LNA) optimizado para la frecuencia de &lt;strong&gt;137 MHz&lt;/strong&gt;, ideal para captar las señales de los satélites meteorológicos NOAA.&lt;/p&gt;&#xA;&lt;h3 id=&#34;herramientas-utilizadas&#34;&gt;Herramientas utilizadas:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;KiCad (ngspice):&lt;/strong&gt; Para las simulaciones iniciales de parámetros S.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Smith Chart:&lt;/strong&gt; Para el cálculo de las redes de acoplamiento de entrada y salida.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;El núcleo del diseño utiliza el transistor de radiofrecuencia &lt;strong&gt;BFR93A&lt;/strong&gt;, buscando obtener la máxima ganancia posible con la menor figura de ruido.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;em&gt;En desarrollo de la web&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
