@@ -7,8 +7,8 @@ body {
 header {
     display: flex;
     border-bottom: 1px solid #000;
-    color: white;
-    background-color: #920000;
+    color: #ffff00;
+    background-color: #000;
 }
 
 header a{
@@ -55,6 +55,20 @@ nav {
     }
 }
 
+.redes-sociales {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.redes-sociales li {
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 time {
     font-style: italic;
     color: #888;
@@ -96,18 +110,10 @@ pre {
   background-position: center;
 }
 
-.icono-pdf::before {
-  background-image: url('images/icons/pdf.png');
-}
-
-.icono-latex::before {
-  background-image: url('images/icons/latex.png');
-}
-
-.icono-github::before {
-  background-image: url('images/icons/github.png');
-}
-
-.icono-discord::before {
-  background-image: url('images/icons/discord.png');
-}
+/* Documentos */
+.icono-pdf::before { background-image: url('images/icons/pdf.png'); }
+.icono-latex::before { background-image: url('images/icons/latex.png'); }
+/* Redes sociales */
+.icono-github::before { background-image: url('images/icons/github.png'); }
+.icono-discord::before { background-image: url('images/icons/discord.png'); }
+.icono-youtube::before { background-image: url('images/icons/youtube.png'); }

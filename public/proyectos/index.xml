@@ -6,21 +6,21 @@
     <description>Recent content in Proyectos on Luis Figueroa</description>
     <generator>Hugo</generator>
     <language>es-pe</language>
-    <lastBuildDate>Wed, 20 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/proyectos/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Visualizador de Datos Electorales ONPE</title>
-      <link>http://localhost:1313/proyectos/onpe/</link>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/proyectos/onpe/</guid>
-      <description>&lt;p&gt;Un script desarrollado en &lt;strong&gt;Python&lt;/strong&gt; para automatizar la extracción de datos de las actas electorales de la ONPE y generar mapas visuales interactivos.&lt;/p&gt;&#xA;&lt;h3 id=&#34;características&#34;&gt;Características:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Uso de &lt;strong&gt;GeoPandas&lt;/strong&gt; para el procesamiento de archivos GeoJSON de las regiones.&lt;/li&gt;&#xA;&lt;li&gt;Renderizado de mapas limpios con &lt;strong&gt;D3.js&lt;/strong&gt; siguiendo una estética web minimalista.&lt;/li&gt;&#xA;&lt;li&gt;Clasificación automática por niveles de votación.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
     <item>
       <title>Amplificador de Bajo Ruido (LNA) 137 MHz</title>
       <link>http://localhost:1313/proyectos/lna/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/proyectos/lna/</guid>
-      <description>&lt;p&gt;&lt;em&gt;En desarrollo de la web&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;em&gt;En desarrollo del sitio&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Visualizador de Datos Electorales ONPE</title>
+      <link>http://localhost:1313/proyectos/onpe/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/proyectos/onpe/</guid>
+      <description>&lt;p&gt;&lt;em&gt;En desarollo del sitio&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Pero puedes visitar el sitio mientras tanto en &lt;a href=&#34;https://https://github.com/luisfigueroaa/elecciones-2026&#34;&gt;texthttps://github.com/luisfigueroaa/elecciones-2026&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

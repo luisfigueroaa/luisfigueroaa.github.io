@@ -7,8 +7,8 @@ body {
 header {
     display: flex;
     border-bottom: 1px solid #000;
-    color: white;
-    background-color: #920000;
+    color: #ffff00;
+    background-color: #000;
 }
 
 header a{
@@ -37,24 +37,6 @@ nav {
     padding: 10px;
 }
 
-nav a.active {
-    font-weight: bold;
-}
-
-.redes-sociales {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 10px;
-}
-
-.redes-sociales li {
-    border: solid 1px;
-    padding: 5px;
-    border-radius: 5px;
-}
-
 .cajas {
     display: flex; 
     gap: 10px;
@@ -71,6 +53,20 @@ nav a.active {
     .cajas div {
         width: 100%;
     }
+}
+
+.redes-sociales {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.redes-sociales li {
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 time {
@@ -114,11 +110,10 @@ pre {
   background-position: center;
 }
 
+/* Documentos */
+.icono-pdf::before { background-image: url('images/icons/pdf.png'); }
+.icono-latex::before { background-image: url('images/icons/latex.png'); }
 /* Redes sociales */
 .icono-github::before { background-image: url('images/icons/github.png'); }
 .icono-discord::before { background-image: url('images/icons/discord.png'); }
 .icono-youtube::before { background-image: url('images/icons/youtube.png'); }
-
-/* CV */
-.icono-pdf::before { background-image: url('images/icons/pdf.png'); }
-.icono-latex::before { background-image: url('images/icons/latex.png'); }

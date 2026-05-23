@@ -4,4 +4,4 @@ description: "Diseño y simulación de un LNA para la recepción de satélites N
 date: 2026-05-15
 ---
 
-*En desarrollo de la web*
+*En desarrollo del sitio*
