@@ -1,7 +1,29 @@
 {{ define "main" }}
     <article>
-        <h2>{{ .Title }}</h2>
-        <p><time>{{ time.Format "2 de January, 2006" .Date }}</time></p>
+        <h1>{{ .Title }}</h1>
+        <div class="metadata">
+            <time>{{ time.Format "2 de January, 2006" .Date }}</time>
+            <br>
+            <span style="font-family: monospace;">
+                {{ with .Params.categories }}
+                    <span>Categoría(s): 
+                    {{ range $index, $element := . }}
+                        {{ if $index }}, {{ end }}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                    {{ end }}
+                    </span>
+                {{ end }}
+            </span>
+            <br>
+            <span style="font-family: monospace;">
+                {{ with .Params.tags }}
+                    <span>Etiqueta(s): 
+                    {{ range $index, $element := . }}
+                        {{ if $index }}, {{ end }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                    {{ end }}
+                    </span>
+                {{ end }}
+            </span>
+        </div>
         <div>
             {{ .Content }}
         </div>

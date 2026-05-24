@@ -6,8 +6,14 @@
     <description>Recent content in Posts on Luis Figueroa</description>
     <generator>Hugo</generator>
     <language>es-pe</language>
-    <lastBuildDate>Thu, 21 May 2026 23:14:20 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RF día cero</title>
+      <link>http://localhost:1313/posts/rf-dia-cero/</link>
+      <pubDate>Sun, 24 May 2026 13:33:46 -0500</pubDate>
+      <guid>http://localhost:1313/posts/rf-dia-cero/</guid>
+      <description>&lt;p&gt;Empecemos para definir que es RF ó Radiofrecuencia. Vamos a buscar una definición práctica en Wikipedia antes de adentrarnos a los libros.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;El término radiofrecuencia (RF) (también, espectro de radiofrecuencia) se aplica a la porción menos energética del espectro electromagnético, situada entre los 3 hercios (Hz) y 300 gigahercios (GHz).&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Entonces podemos definir que es cualquier espectro de la frecuencia entre esos rangos, aplicado a cualquier energía.&lt;/p&gt;&#xA;&lt;p&gt;Ahora, no vamos a adentrarnos en definiciones complejas aún. Sin embargo vamos a manejar dos libros en este recorrido:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Hola</title>
       <link>http://localhost:1313/posts/hola/</link>

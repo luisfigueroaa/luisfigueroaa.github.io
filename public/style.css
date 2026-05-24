@@ -92,6 +92,13 @@ pre {
     padding: 10px;
 }
 
+.metadata {
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
 /********** Iconos **********/
 
 .icono {
